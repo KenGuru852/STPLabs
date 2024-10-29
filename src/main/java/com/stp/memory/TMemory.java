@@ -56,17 +56,13 @@ public class TMemory<T extends Number> {
             this.FNumber = (T) Integer.valueOf((int)result);
         } else if (this.FNumber instanceof Double){
             this.FNumber = (T) Double.valueOf(result);
-        }
-        else if (this.FNumber instanceof Float){
+        } else if (this.FNumber instanceof Float){
             this.FNumber = (T) Float.valueOf((float)result);
-        }
-        else if (this.FNumber instanceof Long){
+        } else if (this.FNumber instanceof Long){
             this.FNumber = (T) Long.valueOf((long)result);
-        }
-        else if (this.FNumber instanceof Short){
+        } else if (this.FNumber instanceof Short){
             this.FNumber = (T) Short.valueOf((short)result);
-        }
-        else if (this.FNumber instanceof Byte){
+        } else if (this.FNumber instanceof Byte){
             this.FNumber = (T) Byte.valueOf((byte)result);
         }
         this.FState = true;
